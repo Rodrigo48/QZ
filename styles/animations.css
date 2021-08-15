@@ -1,0 +1,75 @@
+.opacity-zero {
+    opacity: 0;
+}
+.opacity-one {
+    opacity: 1;
+}
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block;
+}
+.selected {
+    transition: 0.2s;
+    background-color: rgb(100, 255, 100);
+}
+.unselected {
+    transition: 0.2s;
+    background-color: rgb(196, 196, 196);
+}
+
+
+/* MSG TAG */
+.success-msg {
+    opacity: 1;
+    background-color: rgb(193, 255, 193);
+    border-left: 10px solid rgb(1, 97, 1);
+    color: rgb(1, 97, 1);
+}
+.error-msg {
+    opacity: 1;
+    background-color: rgb(252, 150, 150);
+    border-left: 10px solid rgb(124, 0, 0);
+    color: rgb(124, 0, 0);
+}
+.unusable-msg {
+    opacity: 0;
+    background-color: transparent;
+    border: none;
+}
+
+/* RADIOs TAG */
+.radio-marked {
+    transition: 0.3s;
+    background-color: rgb(200, 255, 200);
+}
+.radio-unusable {
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+/* MSG ALERT TAG */
+#alert_msg {
+    transition: 0.5s;
+    width: 55%;
+    height: 75px;
+    line-height: 74px;
+    margin: 20px auto 20px auto;
+}
+#alert_msg p {
+    margin: 0;
+    padding: 0 5% 0 5%;
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+    font-family: Calibri;
+}
+
+@media screen and (max-width: 800px) {
+
+    #alert_msg {
+        width: 90%;
+    }
+
+}

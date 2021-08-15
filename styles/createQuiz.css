@@ -1,0 +1,105 @@
+body {
+    color: black;
+}
+
+/* Conteiner principal que contem as fases */
+#container {
+    display: flex;
+}
+.phases {
+    transition: 1s;
+    width: 50%;
+    min-height: 600px;
+    margin: 0 0 40px auto;
+    box-shadow: -5px 5px 10px 5px #9dbebb;
+    background-color: #77aca2;
+}
+.phases h2 {
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+    font-family: Calibri;
+}
+
+/* box que contem os inputs que definem perguntas e opcoes */
+.questions {
+    transition: 1s;
+    border: 1px solid black;
+    width: 500px;
+    margin: 25px auto 25px auto;
+    text-align: center;
+    font-size: 13pt;
+    font-family: Calibri;
+    padding-bottom: 25px;
+}
+textarea {
+    width: 90%;
+    resize: none;
+    font-family: Arial;
+}
+
+/* radio's circle que indicam as respostas já setadas */
+#ops_count, #quests_count, #ends_count {
+    display: flex;
+    transition: 1s;
+    width: fit-content;
+    margin: 20px auto 5px auto;
+}
+.ops_checked {
+    margin: 0 5px 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+/* botoes gerais */
+button {
+    display: block;
+    margin: 50px auto 30px auto;
+    width: 200px;
+    height: 50px;
+}
+#ops button {
+    width: 108px;
+    margin-top: 20px;
+    height: 30px;
+}
+
+#setting_correct {
+    width: 70%;
+}
+.ops_container_selected {
+    display: flex;
+    width: 90%;
+    height: fit-content;
+    margin: 10px auto 10px auto;
+    border: 1px solid black;
+}
+.ops_container_selected input {
+    margin: auto;
+    width: 10%;
+    height: fit-content;
+}
+.ops_container_selected p {
+    text-align: left;
+    width: 90%;
+    padding: 0 1% 0 1%;
+}
+.ends {
+    width: 30%;
+}
+#question_answer_text {
+    width: fit-content;
+    margin: auto;
+    border-bottom: 3px solid black;
+}
+
+#ads {
+    margin-left: 10px;
+    width: 10%;
+    height: 600px;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
