@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando meu quiz</title>
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="../styles/createQuiz.css">
+    <link rel="icon" href="../images/icon.png">
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="../index.html">QZ</a></h1>
+        <nav>
+            <ul>
+                <li><a href="../html/createQuiz.html">Criar Quizzes</a></li>
+                <li><a href="../html/login.html"><img src="../images/icons/usuario-de-perfil.png"></a></li>
+            </ul>
+        </nav>  
+        </div>
+    </header>
+
+    <div id="alert_msg">
+        <p id="texto_msg"></p>
+    </div>
+
+    <div id="container">
+        <article class="phases" id="phase1">
+            <h2>Bem vindo ao criador de quiz!</h2>
+            <section>
+                <div class="questions" id="quest1">
+                    <p>Quantas perguntas este quiz terá?</p>
+                    <select name="quant_quests" id="qtd_quest">
+                        <option value=""></option>
+                        <option value="1">1 Um</option>
+                        <option value="2">2 Dois</option>
+                        <option value="3">3 Três</option>
+                        <option value="4">4 Quatro</option>
+                        <option value="5">5 Cinco</option>
+                    </select>
+                </div>
+                <div class="questions" id="quest2">
+                    <p>Quantas opções de resposta haverá por pergunta?</p>
+                    <select name="quant_options" id="qtd_opc">
+                        <option value=""></option>
+                        <option value="2">2 Dois</option>
+                        <option value="3">3 Três</option>
+                        <option value="4">4 Quatro</option>
+                    </select>
+                </div>
+                <div class="questions" id="quest3">
+                    <p>Qual é o tipo deste quiz?</p>
+                    <select name="type_quiz" id="type_quiz">
+                        <option value=""></option>
+                        <option value="1">É um quiz de taxa de acerto</option>
+                        <option id="quiz_type_two" value="2">É um quiz de teste de personalidade</option>
+                    </select>
+                </div>
+                <div class="questions" id="quest4">
+                    <p>Quantos possiveis finais existirão?</p>
+                    <select name="qtd_ends" id="qtd_ends">
+                        <option value=""></option>
+                        <option value="2">2 Dois</option>
+                        <option value="3">3 Três</option>
+                        <option value="4">4 Quatro</option>
+                    </select>
+                </div>
+            </section>
+            <button id="next_phase2">Continuar</button>
+        </article>
+        <article class="phases" id="phase2">
+            <section>
+                <h2>Agora vamos desenvolver as perguntas deste quiz</h2>
+                <div class="questions" id="set_quests">
+                    <p>Escreva o texto da pergunta</p>
+                    <div id="quests_count">
+                        <!-- DIVs created in JS --> 
+                    </div>
+                    <textarea name="" id="questao" cols="30" rows="5"></textarea>
+                </div>
+                <div class="questions" id="ops">
+                    <p>Escreva as opções de resposta para esta pergunta</p>
+                    <div id="ops_count">
+                        <!-- DIVs created in JS -->
+                    </div>
+                    <textarea name="" id="opcao" cols="30" rows="5"></textarea>
+                    <button id="next_op">Próxima Opção</button>
+                </div>
+                <button id="next_quest">Próxima Questão</button>
+                <button id="next_phase3">Continuar</button>
+            </section>
+        </article>
+        <article class="phases" id="phase3">
+            <section>
+                <h2>Por fim, vamos definir as respostas e os possiveis finais</h2>
+
+                <div class="questions a" id="set_ends">
+                    <p>Escreva o nome deste final</p>
+                    <div id="ends_count">
+                        <!-- DIVs created in JS --> 
+                    </div>
+                    <input type="text" id="end_name"></input>
+                    <p>Escreva a descrição deste final</p>
+                    <textarea name="" id="end_description" cols="30" rows="5"></textarea>
+                    <button id="next_end">Próximo final</button>
+                </div>
+                
+                <div class="questions" id="setting_correct">
+                    <h4 id="question_answer_number">Questão 1</h4>
+                    <h3 id="question_answer_text">TEXTO DA QUESTÃO</h3>
+                    <div id="container_select_op_correct" class="quests_selected_op">
+                        
+                    </div>
+                    <button id="next_op_verify">Próxima Questão</button>
+                </div>
+                <button id="play">Testar e publicar</button>
+            </section>
+        </article>
+    
+        <div id="ads">
+            
+        </div>
+    </div>
+    
+    <script src="../scripts/newQuiz.js"></script>
+    <script src="../scripts/functions.js"></script>
+</body>
+</html>
